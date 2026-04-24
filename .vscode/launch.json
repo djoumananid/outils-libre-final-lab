@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run PricingEngine Demo",
+      "request": "launch",
+      "mainClass": "com.lab.pricing.Main",
+      "projectName": "pricing-engine"
+    },
+    {
+      "type": "java",
+      "name": "Debug PricingEngine",
+      "request": "launch",
+      "mainClass": "com.lab.pricing.Main",
+      "projectName": "pricing-engine",
+      "console": "integratedTerminal"
+    }
+  ]
+}
