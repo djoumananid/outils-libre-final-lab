@@ -29,17 +29,23 @@ public final class PriceBreakdown {
     public double getTaxAmount()      { return taxAmount; }
     public double getFinalPrice()     { return finalPrice; }
 
-    @Override
-    public String toString() {
-        return String.format(
-            "PriceBreakdown{\n" +
-            "  subtotal       = %.2f\n" +
-            "  discountAmount = %.2f\n" +
-            "  taxableAmount  = %.2f\n" +
-            "  taxAmount      = %.2f\n" +
-            "  finalPrice     = %.2f\n" +
-            "}",
-            subtotal, discountAmount, taxableAmount, taxAmount, finalPrice
-        );
-    }
+@Override
+public String toString() {
+    return String.format(
+        "+----------------+-----------+\n" +
+        "| Field          | Value     |\n" +
+        "+----------------+-----------+\n" +
+        "| Subtotal       | %8.2f |\n" +
+        "| Discount       | %8.2f |\n" +
+        "| Taxable Amount | %8.2f |\n" +
+        "| Tax Amount     | %8.2f |\n" +
+        "| Final Price    | %8.2f |\n" +
+        "+----------------+-----------+",
+        subtotal,
+        discountAmount,
+        taxableAmount,
+        taxAmount,
+        finalPrice
+    );
+}
 }
